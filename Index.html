@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="floating-particles" id="particles"></div>
+    
+    <div class="container">
+        <main class="main-section">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search for any city..." id="citySearch">
+            </div>
+
+            <div class="weather-header">
+                <div class="city-info">
+                    <h1 id="cityName"></h1>
+                    <p id="rainChance"></p>
+                </div>
+                <div class="weather-icon sun" id="mainWeatherIcon"></div>
+            </div>
+
+            <div class="current-temp" id="currentTemp"></div>
+
+            <div class="forecast-section">
+                <h3 class="section-title">TODAY'S FORECAST</h3>
+                <div class="hourly-grid" id="hourlyItems"></div>
+            </div>
+
+            <div class="conditions-section">
+                <div class="conditions-header">
+                    <h3 class="section-title">AIR CONDITIONS</h3>
+                    <button style="display: none;" class="details-btn">View Details</button>
+                </div>
+                <div class="conditions-grid">
+                    <div class="condition-item">
+                        <div class="condition-label">🌡️ Real Feel</div>
+                        <div class="condition-value" id="realFeel"></div>
+                    </div>
+                    <div class="condition-item">
+                        <div class="condition-label">💨 Wind Speed</div>
+                        <div class="condition-value" id="windSpeed"></div>
+                    </div>
+                    <div class="condition-item">
+                        <div class="condition-label">💧 Humidity</div>
+                        <div class="condition-value" id="humidity"></div>
+                    </div>
+                    <div class="condition-item">
+                        <div class="condition-label">☀️ UV Index</div>
+                        <div class="condition-value" id="uvIndex"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <h3 class="section-title">7-DAY FORECAST</h3>
+            <div class="daily-forecast" id="dailyForecast"></div>
+        </aside>
+    </div>
+</body>
+</html>
