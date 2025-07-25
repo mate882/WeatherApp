@@ -17,10 +17,10 @@ const weatherIcons = {
     '10n': { icon: '🌧️', class: 'rainy' },
     '11d': { icon: '⛈️', class: 'storm' },
     '11n': { icon: '⛈️', class: 'storm' },
-    '13d': { icon: '❄️', class: 'cloudy' },
-    '13n': { icon: '❄️', class: 'cloudy' },
-    '50d': { icon: '🌫️', class: 'cloudy' },
-    '50n': { icon: '🌫️', class: 'cloudy' }
+    '13d': { icon: '❄️', class: 'snow' },
+    '13n': { icon: '❄️', class: 'snow' },
+    '50d': { icon: '🌫️', class: 'mist' },
+    '50n': { icon: '🌫️', class: 'mist' }
 };
 
 let currentCity = 'Madrid';
